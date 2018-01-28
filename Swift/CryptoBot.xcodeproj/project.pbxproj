@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D98280832015491C00708CDB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98280822015491C00708CDB /* main.swift */; };
+		D98280C320154ADC00708CDB /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98280C420154ADC00708CDB /* Dependencies.framework */; };
+		D98280CA20154B3C00708CDB /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98280C620154B3C00708CDB /* NetworkRequest.swift */; };
+		D98280CB20154B3C00708CDB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98280C720154B3C00708CDB /* main.swift */; };
+		D98280CC20154B3C00708CDB /* FetchHistoricalTrades.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98280C820154B3C00708CDB /* FetchHistoricalTrades.swift */; };
+		D98280CD20154B3C00708CDB /* Alamofire+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98280C920154B3C00708CDB /* Alamofire+Promise.swift */; };
+		D98280D920154C9A00708CDB /* EventProducerUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98280D820154C9A00708CDB /* EventProducerUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +29,13 @@
 
 /* Begin PBXFileReference section */
 		D982807F2015491C00708CDB /* CryptoBot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CryptoBot; sourceTree = BUILT_PRODUCTS_DIR; };
-		D98280822015491C00708CDB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D98280C420154ADC00708CDB /* Dependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98280C520154B3B00708CDB /* CryptoBot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CryptoBot-Bridging-Header.h"; sourceTree = "<group>"; };
+		D98280C620154B3C00708CDB /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		D98280C720154B3C00708CDB /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D98280C820154B3C00708CDB /* FetchHistoricalTrades.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchHistoricalTrades.swift; sourceTree = "<group>"; };
+		D98280C920154B3C00708CDB /* Alamofire+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+Promise.swift"; sourceTree = "<group>"; };
+		D98280D820154C9A00708CDB /* EventProducerUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventProducerUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98280C320154ADC00708CDB /* Dependencies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +55,7 @@
 			children = (
 				D98280812015491C00708CDB /* CryptoBot */,
 				D98280802015491C00708CDB /* Products */,
+				D98280C220154ADC00708CDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +70,22 @@
 		D98280812015491C00708CDB /* CryptoBot */ = {
 			isa = PBXGroup;
 			children = (
-				D98280822015491C00708CDB /* main.swift */,
+				D98280C920154B3C00708CDB /* Alamofire+Promise.swift */,
+				D98280C820154B3C00708CDB /* FetchHistoricalTrades.swift */,
+				D98280C720154B3C00708CDB /* main.swift */,
+				D98280C620154B3C00708CDB /* NetworkRequest.swift */,
+				D98280C520154B3B00708CDB /* CryptoBot-Bridging-Header.h */,
+				D98280D820154C9A00708CDB /* EventProducerUtilities.swift */,
 			);
 			path = CryptoBot;
+			sourceTree = "<group>";
+		};
+		D98280C220154ADC00708CDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D98280C420154ADC00708CDB /* Dependencies.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +120,7 @@
 				TargetAttributes = {
 					D982807E2015491C00708CDB = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -120,7 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98280832015491C00708CDB /* main.swift in Sources */,
+				D98280D920154C9A00708CDB /* EventProducerUtilities.swift in Sources */,
+				D98280CD20154B3C00708CDB /* Alamofire+Promise.swift in Sources */,
+				D98280CC20154B3C00708CDB /* FetchHistoricalTrades.swift in Sources */,
+				D98280CB20154B3C00708CDB /* main.swift in Sources */,
+				D98280CA20154B3C00708CDB /* NetworkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,9 +267,13 @@
 		D98280872015491C00708CDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KG26Y879R;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CryptoBot/CryptoBot-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -246,9 +281,12 @@
 		D98280882015491C00708CDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KG26Y879R;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CryptoBot/CryptoBot-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

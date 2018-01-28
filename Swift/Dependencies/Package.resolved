@@ -1,0 +1,79 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "bc973c5311ce3db3f01a9fcde027fb11fa2254bf",
+          "version": "4.6.0"
+        }
+      },
+      {
+        "package": "Nimble",
+        "repositoryURL": "https://github.com/Quick/Nimble.git",
+        "state": {
+          "branch": null,
+          "revision": "22800b0954c89344bb8c87f8ab93378076716fb7",
+          "version": "7.0.3"
+        }
+      },
+      {
+        "package": "PromiseKit",
+        "repositoryURL": "https://github.com/mxcl/PromiseKit.git",
+        "state": {
+          "branch": null,
+          "revision": "de638abca588be5fabcab0cb0d47e56156608fa5",
+          "version": "4.5.1"
+        }
+      },
+      {
+        "package": "Quick",
+        "repositoryURL": "https://github.com/Quick/Quick.git",
+        "state": {
+          "branch": null,
+          "revision": "0ff81f2c665b4381f526bd656f8708dd52a9ea2f",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "ReactiveKit",
+        "repositoryURL": "https://github.com/ReactiveKit/ReactiveKit.git",
+        "state": {
+          "branch": null,
+          "revision": "86b622e2de3fe06eeb2dcc4dc832d51020aa5e6a",
+          "version": "3.8.3"
+        }
+      },
+      {
+        "package": "ReactiveSwift",
+        "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "46fb4d4a8285286e54929add1d12f384675895c6",
+          "version": "3.1.0"
+        }
+      },
+      {
+        "package": "Result",
+        "repositoryURL": "https://github.com/antitypical/Result.git",
+        "state": {
+          "branch": null,
+          "revision": "7477584259bfce2560a19e06ad9f71db441fff11",
+          "version": "3.2.4"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "de309166a48a9dfc51d5bc4c55c0664d981de311",
+          "version": "4.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
