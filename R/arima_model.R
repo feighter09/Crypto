@@ -57,8 +57,9 @@ perform_strat = function(data, start_date, days_timeframe, length_testing){
 data = read_excel("~/crypto/daily_bitcoin_COINBASE.xlsx")
 date = data$date
 price = data$close
+log_price = log(price)
 returns = diff(price)
-log_returns = log(returns)
+log_returns = diff(log_price)
 
 start_date = date[1]
 days_timeframe = 100
@@ -76,11 +77,7 @@ strategy_returns_daily = buy_sell*true_returns
 strategy_returns = sum(buy_sell * true_returns)
 
 
-
-
-
-
-
-
-
+#PLOT RESULTS
+plot(strategy_returns_daily, type = 'l')
+sum(strategy_returns_daily)
 
